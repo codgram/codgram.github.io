@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+
+    <style>
+        body { margin: 0; padding: 0; }
+        html { height: 100%; cursor: default; }
+        body {
+            font-family: "Roboto", sans-serif; /* Default font */
+            width: 100%; height: 100%;
+            text-align: center;
+            display: table;
+            opacity: 1;
+            animation: fadein 3s forwards;
+        }
+        h2 {
+            font-weight: 300;
+            margin-bottom: 25px;
+        }
+        #main {
+            vertical-align: middle;
+            display: table-cell;
+        }
+        /* Progress bar */
+        #progress {
+            width: 45%; /* Bar width */
+            margin: 0 auto;
+            border-radius: 10px; /* Roundness */
+            background-color: #a8a8a8; /* Background colour */
+            padding: 7px 5px;
+            /* border: 5px solid #a8a8a8; Border */
+        }
+        #fill {
+            padding: 2px 0;
+            background-color: #004ab9; /* Fill colour */
+            width: 60%; /* Bar percentage, change text below also */
+            border-radius: 25px; /* Roundness */
+            animation: proanimate 2s;
+        }
+        #barpercent h3 {
+            color: white; /* Bar percentage text colour */
+            margin: 0; padding: 0;
+            opacity: 1;
+            animation: fadein 3s forwards;
+        }
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Fades in animation */
+        @keyframes fadein  {
+            from { opacity: 0; }
+        }
+        /* Animates bar on page load */
+        @keyframes proanimate {
+            from { width: 0%; }
+        }
+
+        @media screen and (max-width:600px) {
+            img {
+                width: 60%;
+            }
+            h1 {
+                font-size: 1.3em;
+            }
+            h2 {
+                margin: 1.1em;
+                font-size: 1.1em;
+            }
+            #progress {
+                width: 80%; /* Bar width */
+            }
+        }
+    </style>
+    <title>Coming Soon</title>
+</head>
+<body>
+    <div id="main">
+        <img src="logo.png" alt="Logo Image" class="img-fluid"  style="max-width:300px; max-heigth:300px">
+        <h1>Codgram</h1>
+        <h2>Coming Soon! Stay tuned! </h2>
+        <div id="progress"><div id="fill"><div id="barpercent"><h3>60%</h3></div></div></div>
+    </div>
+    <div class="fixed-bottom ">
+        <div class="container">
+            <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-code" viewBox="0 0 16 16">
+                    <path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"></path>
+                  </svg>
+                   with <span class="text-danger">❤</span> by <a class="text-decoration-none" href="https://codgram.com" target="_blank"><strong>Codgram</strong></a></p>
+        </div>
+        
+    </div>
+    <style>
+        .fixed-bottom {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1030;
+            text-align: right!important;
+        }
+        .text-decoration-none {
+            text-decoration: none!important;
+        }
+        .container {
+            max-width: 1640px;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 1rem;
+        }
+        .text-danger {
+            color: red;
+        }
+        .bi {
+            display: inline-block;
+            vertical-align: -0.255em;
+        }
+        
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</body>
+</html>

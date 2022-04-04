@@ -1,2 +1,2 @@
-# codgram.github.io
+# Codgram
 Coming soon!
